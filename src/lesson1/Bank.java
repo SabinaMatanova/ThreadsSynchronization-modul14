@@ -40,9 +40,9 @@ public class Bank {
     }
 
     public static void main(String[] args) throws InterruptedException {
-        Bank bank = new Bank();
+        BankAtomic bankAtomic = new BankAtomic();
         while(true) {
-            System.out.println(bank.getMoney());
+            System.out.println(bankAtomic.getMoney());
             Thread.sleep(1000);
         }
     }
